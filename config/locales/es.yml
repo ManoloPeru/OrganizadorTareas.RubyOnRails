@@ -1,0 +1,21 @@
+---
+es:
+  activerecord:
+    models:
+      category:
+        one: Categoría
+        other: Categorías
+  categories:
+    edit_category: Editar categoría
+    form:
+      description: Descripción
+      name: Nombre
+    index_category: Lista de categorías
+    new_category: Nueva categoría
+    show_category: Mostrar categoría
+  common:
+    back: Volver
+  hello: Hola mundo
+  tasks:
+    errors:
+      invalid_due_date: La fecha no puede estar en el pasado
