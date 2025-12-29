@@ -38,6 +38,7 @@ gem 'annotate', require: false
 gem 'rails-i18n', '~> 6.0'
 gem 'devise', '~> 4.8.1'
 gem 'cocoon'
+gem 'cancancan', '~> 3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -55,6 +56,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'hamlit-rails'
   gem 'i18n-tasks', '~> 1.0.13'
+  gem 'letter_opener', '~> 1.8.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
