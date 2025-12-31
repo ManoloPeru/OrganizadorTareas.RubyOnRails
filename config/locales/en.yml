@@ -14,7 +14,11 @@ en:
     new_category: New Category
     show_category: Show Category
   common:
+    are_you_sure: Are you sure
     back: Volver
+    destroy: Destroy
+    edit: Edit
+    show: Show
   hello: Hello world
   tasks:
     errors:

@@ -1,12 +1,12 @@
-<%- if @note.persisted? %>
-    var parentNode = document.querySelector(".notes-container .notes") // Selecciona el contenedor de notas
-    var div = document.createElement("div") // Crea un nuevo div para la nota
-    div.innerHTML = "<%= j render 'tasks/notes/note', note: @note %>" // Rellena el div con el contenido de la nota renderizada
-    parentNode.appendChild(div) // Agrega el nuevo div al contenedor de notas
-    document.getElementById("note_body").value = ""; // Limpia el campo de entrada de la nota
-    // Desplázate suavemente hacia la parte inferior de la página para ver la nueva nota
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: "smooth"
-    });
+<% if @note.persisted? %>
+  var notes_container = document.querySelector(".notes")
+  var div = document.createElement("div")
+  div.classList.add("note-element")
+  var input_note = document.getElementById("note_body")
+
+  div.innerHTML = "<%= j render 'tasks/notes/note', note: @note %>"
+
+  notes_container.insertAdjacentElement('afterbegin', div);
+  input_note.value = "";
+  input_note.blur()
 <% end %>

@@ -10,6 +10,8 @@
 #  updated_at :datetime         not null
 #
 class Participant < ApplicationRecord
+  enum role: { responsible: 1, follower: 2 }
+  
   belongs_to :user # Asociación con el modelo User
   belongs_to :task # Asociación con el modelo Task
 end

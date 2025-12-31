@@ -14,7 +14,11 @@ es:
     new_category: Nueva categoría
     show_category: Mostrar categoría
   common:
-    back: Volver
+    are_you_sure: ¿Está seguro?
+    back: Atrás
+    destroy: Eliminar
+    edit: Editar
+    show: Mostrar
   hello: Hola mundo
   tasks:
     errors:
